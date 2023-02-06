@@ -15,6 +15,7 @@ html {
 /* General styles */
 body {
     background-color: #e6b800;
+    height: 3000px;
 }
 
 header {
@@ -65,18 +66,38 @@ a:hover {
 
 /* Main image styles */
 img {
-height: 400px;
-width: 400px;
-border: 5px solid black;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border: 5px solid black;
+    margin-top: 100px;
 }
-
-main {
+.img {
     display: flex;
     justify-content: center;
+}
+
+/* Main text style */
+
+.main-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-top: 150px;
+
+}
+
+.main-text {
+    border: 2px solid black;
+    height: fit-content ;
+    width: fit-content;
 }
 
 h2 {
-    display: block;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid black;
+    height: fit-content ;
+    width: fit-content;
 }
-
