@@ -5,9 +5,17 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+    margin: auto;
+    width: 1500px;
+    overflow: scroll;
+}
+
 /* General styles */
 body {
     background-color: #e6b800;
+    height: 3000px;
 }
 
 header {
@@ -52,31 +60,44 @@ a {
 
 a:hover {
     border-bottom: 4px solid black;
+    font-size: 38px;
 }
 
 
 /* Main image styles */
 img {
-height: 400px;
-width: 400px;
-border: 5px solid black;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border: 5px solid black;
+    margin-top: 100px;
 }
-
-main {
+.img {
     display: flex;
     justify-content: center;
+}
+
+/* Main text style */
+
+.main-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-top: 150px;
+
 }
 
-Footer {
-
-    Border-top: 10px solid black;
-    margin: 5px;
+.main-text {
+    border: 2px solid black;
+    height: fit-content ;
+    width: fit-content;
 }
 
-.main-layout {
-    min-height: 100vh;
-    min-height: 100dvh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+h2 {
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid black;
+    height: fit-content ;
+    width: fit-content;
 }
