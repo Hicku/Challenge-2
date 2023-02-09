@@ -5,21 +5,30 @@
     box-sizing: border-box;
 }
 
+/* General styles */
 html {
     height: 100%;
     margin: auto;
-    width: 1500px;
+    width: auto;
     overflow: scroll;
 }
 
-/* General styles */
 body {
     background-color: #e6b800;
-    height: 3000px;
+    min-height: 100vh;
+    line-height: 1;
+}
+main{
+    display: block;
+}
+
+section {
+    display: block;
+    margin: 80px 120px 80px 120px
 }
 
 header {
-    border-bottom: 10px solid black;
+    border-bottom: 10px inset black;
     display: flex;
     margin: 3px;
     justify-content: start;
@@ -34,6 +43,16 @@ H1 {
     margin-left: 15px;
 }
 
+h2 {
+    text-align: center;
+    font-size: 30px;
+    height: fit-content ;
+    border-top: 5px solid black;
+    padding: 15px;
+
+}
+
+/* nav bar */
 nav {
     display: flex;
     align-self:center;
@@ -51,7 +70,6 @@ ul {
     list-style: none;
 }
 
-/* link styles */
 a {
     color: inherit;
     text-decoration:inherit;
@@ -63,41 +81,60 @@ a:hover {
     font-size: 38px;
 }
 
+/* section 1 */
+.logo {
+    width: 150px;
+    height: 150px;
+    border: none
+}
 
-/* Main image styles */
-img {
+.logo-container {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+}
+
+/* Section 2 text */
+.sec2-img {
     height: 400px;
     width: 400px;
     border: 5px solid black;
     margin-top: 100px;
-}
-.img {
-    display: flex;
-    justify-content: center;
-}
-
-/* Main text style */
-
-.main-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 150px;
-
+    margin-bottom: 80px;
 }
 
 .main-text {
-    border: 2px solid black;
-    height: fit-content ;
-    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-h2 {
-    text-align: center;
+
+.section-2-text {
     font-size: 40px;
-    border: 2px solid black;
-    height: fit-content ;
-    width: fit-content;
+    height: fit-content;
+    width: max;
 }
+
+/* Section 3 images */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+    
+    
+
+}
+
+.sec3-img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.cards {
+    max-height: 30%;
+    border: 5px solid black;
+    
+}
+
