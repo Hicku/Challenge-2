@@ -121,10 +121,8 @@ a:hover {
 .image-container {
     display: flex;
     justify-content: space-around;
-    align-items: space-between;
+    flex-wrap: wrap;
     
-    
-
 }
 
 .sec3-img {
@@ -133,8 +131,11 @@ a:hover {
 }
 
 .cards {
+    margin-top: 2%;
+    max-width: 33%;
     max-height: 30%;
     border: 5px solid black;
+    border-radius: 5px;
     
 }
 
